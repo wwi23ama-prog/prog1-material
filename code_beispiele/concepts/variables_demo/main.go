@@ -1,6 +1,6 @@
 package main
 
-import "github.com/rhcourses/go.basics/examples/concepts"
+import "github.com/wwi23ama-prog/prog1-material/code_beispiele/concepts"
 
 func main() {
 	concepts.IntVariables()
