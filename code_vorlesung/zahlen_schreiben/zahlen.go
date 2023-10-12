@@ -1,10 +1,22 @@
 package zahlenschreiben
 
+import "golang.org/x/exp/slices"
+
 // Digits erwartet eine Zahl und liefert eine Liste
 // mit den Ziffern dieser Zahl.
 func Digits(n int) []int {
 	result := []int{}
-	// TODO
+
+	for n != 0 { // Solange n nicht 0 ist.
+		// Letzte Ziffer bestimmen.
+		lastdigit := n % 10 // "n modulo 10"
+		result = append(result, lastdigit)
+
+		// Letzte Ziffer von n abschneiden.
+		n = n / 10
+	}
+	slices.Reverse(result)
+
 	return result
 }
 
