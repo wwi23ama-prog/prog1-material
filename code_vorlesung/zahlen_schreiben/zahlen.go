@@ -1,6 +1,6 @@
 package zahlenschreiben
 
-import "golang.org/x/exp/slices"
+import "slices"
 
 // Digits erwartet eine Zahl und liefert eine Liste
 // mit den Ziffern dieser Zahl.
