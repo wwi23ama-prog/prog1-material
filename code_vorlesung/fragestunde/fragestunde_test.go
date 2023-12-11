@@ -23,4 +23,17 @@ func ExampleSprint() {
 	)
 
 	fmt.Println(s3)
+
+	// Output:
+}
+
+// Foo2 berechnet den größten gemeinsamen Teiler von x und y.
+func Foo2(x, y int) int {
+	if x == y {
+		return x
+	}
+	if x > y {
+		return Foo2(x-y, y)
+	}
+	return Foo2(x, y-x)
 }
